@@ -1,0 +1,7 @@
+@charset "ISO-8859-1";
+form .erreur {
+    color: #900;
+}
+form .requis {
+    color: #c00;
+}

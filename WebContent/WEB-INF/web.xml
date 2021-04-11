@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Micro_Projet_JavaEE</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>Servlet1</welcome-file>
+  </welcome-file-list>
+    <servlet>
+        <servlet-name>servletAcc</servlet-name>
+        <servlet-class>GI2.JavaEE.MicroProject_MVC.controller.ServletAcc</servlet-class>
+    </servlet>
+    <servlet-mapping>
+         <servlet-name>servletAcc</servlet-name>
+         <url-pattern>/fromAccueil</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>servletIdent</servlet-name>
+        <servlet-class>GI2.JavaEE.MicroProject_MVC.controller.ServletIdentification</servlet-class>
+    </servlet>
+    <servlet-mapping>
+         <servlet-name>servletIdent</servlet-name>
+         <url-pattern>/identifier</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>servletInscr</servlet-name>
+        <servlet-class>GI2.JavaEE.MicroProject_MVC.controller.ServletInscription</servlet-class>
+    </servlet>
+    <servlet-mapping>
+         <servlet-name>servletInscr</servlet-name>
+         <url-pattern>/inscrire</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>servlet1</servlet-name>
+        <servlet-class>GI2.JavaEE.MicroProject_MVC.controller.Servlet1</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+         <servlet-name>servlet1</servlet-name>
+         <url-pattern>/Servlet1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>listeGenre</servlet-name>
+    <servlet-class>GI2.JavaEE.MicroProject_MVC.controller.listGenreServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+    <servlet-name>listeGenre</servlet-name>
+    <url-pattern>/catalogue</url-pattern></servlet-mapping>
+    
+  
+</web-app>
